@@ -1,0 +1,2 @@
+# CommonSpatialPattern-LinearDiscriminantAnalysis
+Brain Computer Interface: CommonSpatialPattern+LinearDiscriminantAnalysis 
