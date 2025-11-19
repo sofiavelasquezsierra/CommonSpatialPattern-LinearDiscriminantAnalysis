@@ -24,23 +24,6 @@ Motor imagery BCI systems face the challenge of extracting discriminative featur
 - **Subject-specific variability** in brain signal patterns
 - **Computational efficiency** requirements for real-time applications
 
-## 📊 Technical Architecture
-
-```mermaid
-graph TD
-    A[Raw EEG Data<br/>62 channels @ 1000Hz] --> B[Preprocessing Pipeline]
-    B --> C[Common Average Reference]
-    C --> D[Downsampling<br/>1000Hz → 250Hz]
-    D --> E[Band-pass Filtering<br/>8-30Hz μ-β bands]
-    E --> F[CSP Feature Extraction]
-    F --> G[Spatial Filter Learning<br/>Maximize J(w)]
-    G --> H[Component Selection<br/>|λ - 0.5| ranking]
-    H --> I[Log-variance Features]
-    I --> J[LDA Classification]
-    J --> K[Fisher Linear Discriminant]
-    K --> L[Binary Decision<br/>Left/Right Motor Imagery]
-```
-
 ## 🚀 Core Algorithms
 
 ### 1. **Common Spatial Patterns (CSP)**
